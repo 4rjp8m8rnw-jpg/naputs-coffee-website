@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crumb & Brew | Coffee & Pastry</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, serif;
+}
+
+body {
+  background: #f8f3eb;
+  color: #49372c;
+}
+
+header {
+  padding: 25px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #efe4d4;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+nav a {
+  color: #49372c;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.hero {
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  padding: 70px 10%;
+  background: linear-gradient(
+    rgba(40,25,15,.35),
+    rgba(40,25,15,.35)
+  ), url("https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=1400")
+  center/cover;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 55px;
+  max-width: 600px;
+}
+
+.hero p {
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 13px 25px;
+  background: #b17a50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+section {
+  padding: 65px 8%;
+  text-align: center;
+}
+
+h2 {
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  margin-top: 35px;
+}
+
+.product {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  padding-bottom: 20px;
+  box-shadow: 0 4px 15px #00000010;
+}
+
+.product img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.product h3 {
+  margin: 15px 0 8px;
+}
+
+.price {
+  color: #a36b43;
+  font-weight: bold;
+}
+
+.about {
+  background: #eadac7;
+}
+
+footer {
+  background: #49372c;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+@media(max-width:600px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav a {
+    margin: 8px;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">CRUMB & BREW ☕</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<div class="hero" id="home">
+  <div>
+    <h1>Fresh Pastry, Good Coffee.</h1>
+    <p>A little happiness in every cup and every bite.</p>
+    <a href="#menu" class="btn">Explore Our Menu</a>
+  </div>
+</div>
+
+<section id="menu">
+  <h2>Our Signature Menu</h2>
+  <p>Made with love, served fresh every day.</p>
+
+  <div class="menu">
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600">
+      <h3>Iced Latte</h3>
+      <p class="price">Rp 28.000</p>
+    </div>
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=600">
+      <h3>Butter Croissant</h3>
+      <p class="price">Rp 22.000</p>
+    </div>
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=600">
+      <h3>Fresh Bread</h3>
+      <p class="price">Rp 18.000</p>
+    </div>
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600">
+      <h3>Chocolate Cake</h3>
+      <p class="price">Rp 35.000</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="about" id="about">
+  <h2>Our Story</h2>
+  <p>
+    Crumb & Brew is a cozy coffee and pastry brand
+    created for people who love good coffee,
+    freshly baked pastries, and beautiful moments.
+  </p>
+</section>
+
+<section id="contact">
+  <h2>Let's Get Your Coffee!</h2>
+  <p>Order your favorite coffee and pastry today.</p>
+  <br>
+  <a class="btn"
+  href="https://wa.me/6281234567890"
+  target="_blank">
+  Order via WhatsApp
+  </a>
+</section>
+
+<footer>
+  <p>© 2026 Crumb & Brew. Made with love.</p>
+  <p>Instagram: @crumbandbrew</p>
+</footer>
+
+</body>
+</html>
